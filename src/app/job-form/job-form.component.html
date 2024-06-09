@@ -1,0 +1,31 @@
+<div class="form-container">
+    <form [formGroup]="jobForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="customerName">Customer Name</label>
+        <input id="customerName" formControlName="customerName">
+      </div>
+  
+      <div>
+        <label for="jobType">Job Type</label>
+        <input id="jobType" formControlName="jobType">
+      </div>
+  
+      <div>
+        <label for="jobStatus">Job Status</label>
+        <input id="jobStatus" formControlName="jobStatus">
+      </div>
+  
+      <div>
+        <label for="appointmentDate">Appointment Date</label>
+        <input id="appointmentDate" type="datetime-local" formControlName="appointmentDate">
+      </div>
+  
+      <div>
+        <label for="technician">Technician</label>
+        <input id="technician" formControlName="technician">
+      </div>
+  
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  

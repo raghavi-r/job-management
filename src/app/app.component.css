@@ -1,0 +1,53 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: normal;
+    background: var(--surface-ground);
+    color: var(--text-color);
+    padding: 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+    background: var(--surface-card);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+::ng-deep{
+.p-toast {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .p-toast-success {
+    background-color: #28a745 !important; /* Green background for success */
+    color: #fff !important; /* White text */
+  }
+  
+  .p-toast-error {
+    background-color: #dc3545 !important; /* Red background for error */
+    color: #fff !important; /* White text */
+  }
+  
+  .p-toast-message-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .p-toast-message-icon {
+    font-size: 1.5em;
+    margin-right: 0.5em;
+  }
+  
+  .p-toast-summary {
+    font-weight: bold;
+  }
+  
+  .p-toast-detail {
+    margin-top: 0.25em;
+  }
+}

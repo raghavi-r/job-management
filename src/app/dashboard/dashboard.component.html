@@ -1,0 +1,17 @@
+    <div class="table-container">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Job Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let job of jobs" (click)="onRowClick(job.ID)">
+                    <td>{{job.ID}}</td>
+                    <td>{{job.jobType}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+

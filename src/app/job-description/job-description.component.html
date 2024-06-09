@@ -1,0 +1,23 @@
+<div *ngIf="job" class="job-details">
+    <h2>Job Details</h2>
+    <div class="detail">
+      <strong>Customer Name:</strong> {{ job.customerName }}
+    </div>
+    <div class="detail">
+      <strong>Job Type:</strong> {{ job.jobType }}
+    </div>
+    <div class="detail">
+      <strong>Job Status:</strong> {{ job.jobStatus }}
+    </div>
+    <div class="detail">
+      <strong>Appointment Date:</strong> {{ job.appointmentDate | date:'yyyy-MM-dd HH:mm:ss' }}
+    </div>
+    <div class="detail">
+      <strong>Technician:</strong> {{ job.technician }}
+    </div>
+    <div class="button-container">
+        <button type="submit" class="btn btn-update"(click)="onRowClick(job.ID)">Update</button>
+        <button type="button" class="btn btn-delete" (click)="confirmUpdate()">Delete</button>
+      </div>
+  </div>
+  
